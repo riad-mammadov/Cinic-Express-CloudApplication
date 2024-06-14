@@ -1,0 +1,414 @@
+:root {
+    --blue: #39a1f1;
+    --blue2: #aeddff;
+    --green: #58ad69;
+    --white: #ffffff;
+    --gray-light: #f7f7f7;
+    --gray-dark: #5f5f5f;
+    --accent: #ffa500;
+    --nhs: #4c6272;
+
+}
+
+body {
+    background-color: var(--blue2);
+}
+
+
+
+/* Header */
+
+.header {
+    position: relative;
+    height: 100px;
+    margin: auto;
+
+
+}
+
+.left {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+    margin-right: 75%;
+    margin-left: -15px;
+}
+
+.search-input {
+    border: none;
+    padding: 10px;
+    flex-grow: 1;
+    margin-right: -1px;
+    border-radius: 5px;
+    margin-left: 25px;
+    z-index: 1;
+}
+
+.search-button {
+    background-color: var(--gray-dark);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 1rem;
+    z-index: 0;
+
+}
+
+
+
+.search-input:focus {
+    border-color: #4c6272;
+
+}
+
+.search-input,
+.search-button {
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+
+.middle img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 8rem;
+}
+
+
+.book-symbol {
+
+    font-size: 40px;
+    color: var(--gray-dark);
+
+}
+
+.book-text {
+    margin-right: 50px;
+}
+
+
+/* Under Header */
+
+.underheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+
+}
+
+.clinicexpress {
+    font-family: 'Arial', sans-serif;
+    color: #005a8d;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+
+}
+
+.clinicexpress::before,
+.clinicexpress::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+
+    left: 50%;
+    width: 50px;
+
+    height: 3px;
+
+    background-color: #49a942;
+
+    transform: translateX(-50%);
+
+}
+
+.clinicexpress::after {
+    width: 30px;
+    background-color: #f46f6f;
+    bottom: -10px;
+
+}
+
+.line-across {
+
+    margin-top: 62px;
+    border: none;
+    height: 2px;
+    background-color: var(--blue);
+}
+
+/* Boxes */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    padding-bottom: 500px;
+    background-color: white;
+
+
+
+
+}
+
+.left-box {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+
+
+}
+
+.right-box {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+
+}
+
+.middle-box {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+
+.left-box:hover,
+.middle-box:hover,
+.right-box:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+
+
+
+}
+
+.manage-box {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.patient-box {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.book {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Middle row buttons */
+
+.left-box2 {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nhs);
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 8px;
+    margin-left: 180px;
+    transition: background-color 0.3s;
+
+
+}
+
+.right-box2 {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nhs);
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+
+}
+
+.middle-box2 {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nhs);
+    border-radius: 8px;
+    margin-right: 180px;
+    transition: background-color 0.3s;
+}
+
+.left-box2:hover,
+.middle-box2:hover,
+.right-box2:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+
+
+
+}
+
+@media (max-width: 780px) {
+    .container {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .left-box,
+    .right-box,
+    .middle-box {
+        flex: auto;
+        font-size: 18px;
+        min-width: 300px;
+        margin: 5px;
+        width: 100%;
+
+    }
+
+    .left-box2,
+    .right-box2,
+    .middle-box2 {
+        flex: auto;
+        font-size: 18px;
+        min-width: 300px;
+        margin: 5px;
+        width: 100%;
+    }
+
+
+    /* Book.html */
+
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking,
+.booking:hover,
+.booking:active,
+.booking:visited,
+.booking:focus {
+    text-decoration: none;
+}
+
+/* BOOK PAGE */
+
+.form-container {
+    background-color: #aeddff;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0);
+
+}
+
+h2 {
+    text-align: center;
+    color: #005eb8;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+input[type=time],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+input[type=submit] {
+    background-color: #005eb8;
+    /* NHS Blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #003087;
+    /* Darker NHS Blue */
+}
+
+.backbutton {
+    height: 50px;
+
+}
+
+#back {
+    font-size: 40px;
+    color: #005eb8;
+
+
+}
+
+#back:hover {
+    transition: 0.3s ease-in-out;
+    color: #003087;
+}

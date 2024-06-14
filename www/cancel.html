@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <title>Cancellation Page</title>
+</head>
+
+<body>
+    <div class="backbutton">
+        <a id="back" href="index.html">
+            <i class="fa-solid fa-circle-left"></i>
+        </a>
+    </div>
+
+
+    <div class="form-container">
+        <h2>Cancel an Appointment</h2>
+        <form action="/submit-appointment-url" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+
+            <label for="service">Service Type:</label>
+            <select id="service" name="service">\
+                <option value="service1">Consultation</option>
+                <option value="service2">Follow-Up</option>
+                <option value="service2">Prescription</option>
+            </select>
+
+            <input type="submit" value="Cancel Appointment">
+        </form>
+    </div>
+</body>
+
+</html>

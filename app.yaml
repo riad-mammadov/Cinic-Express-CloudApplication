@@ -1,0 +1,21 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /css
+  static_dir: css
+- url: /images
+  static_dir: images
+- url: /(.*\.html)
+  static_files: www/\1
+  upload: www/(.*\.html)
+- url: /.*
+  static_files: www/index.html
+  upload: www/index.html
+
+env_variables:
+  MYSQL_DSN: mysql:unix_socket=/cloudsql/cinic-web-cloud-application:europe-southwest1:cloud-database:my-sql-instance;
+  MYSOL_USER: clinicstaff
+  MYSOL_PASSWORD: clinicexpress123
+  
